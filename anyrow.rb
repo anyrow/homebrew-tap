@@ -11,7 +11,7 @@ class Anyrow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anyrow/cli/releases/download/v1.0.0/anyrow_1.0.0_darwin_amd64.tar.gz"
-      sha256 "e327762655e3d5dcaed21cece875a16866be2faf5399ef27e5af12fcf48d31cf"
+      sha256 "5473ef1dcd8355a1bb0f81ba5b81cc546352fb6a1d72b2d0eb563521027344b0"
 
       define_method(:install) do
         bin.install "anyrow"
@@ -19,7 +19,7 @@ class Anyrow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/anyrow/cli/releases/download/v1.0.0/anyrow_1.0.0_darwin_arm64.tar.gz"
-      sha256 "66a60ac141b0a59ae1580d1215048b6a38e73b83c31769d513852dec837b41a6"
+      sha256 "5d0ebf55d971076b812d901edbecd66cb34e913a8356541132894195745978a7"
 
       define_method(:install) do
         bin.install "anyrow"
@@ -30,14 +30,14 @@ class Anyrow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/anyrow/cli/releases/download/v1.0.0/anyrow_1.0.0_linux_amd64.tar.gz"
-      sha256 "fc76ec3ff790aaba2564d2c6590460266a21655dd21f41d32b4c4c6e898cdf59"
+      sha256 "0f6dcd44048f2aea5ce0fd4d43e337f26f9785d1b27cb847853972a62e458cc0"
       define_method(:install) do
         bin.install "anyrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/anyrow/cli/releases/download/v1.0.0/anyrow_1.0.0_linux_arm64.tar.gz"
-      sha256 "3b6bd2f7bb115b2e59aac10455fe6188ea8a468827cf61d5d1b485f9f895625b"
+      sha256 "3b38e91a0fb71859bfe6fb0abdf1aab1329e05a429e8e4c090dc83c0d3773dcd"
       define_method(:install) do
         bin.install "anyrow"
       end
